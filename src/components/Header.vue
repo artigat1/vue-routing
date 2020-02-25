@@ -1,7 +1,7 @@
 ﻿<template>
     <ul class="nav nav-pills">
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/user">User</router-link></li>
+        <router-link to="/" tag="li" exact-active-class="active" role="presentation"><a>Home</a></router-link>
+        <router-link to="/user" tag="li" exact-active-class="active" role="presentation"><a>User</a></router-link>
     </ul>
 </template>
 
