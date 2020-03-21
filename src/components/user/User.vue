@@ -2,18 +2,14 @@
     <div>
         <h1>The user page</h1>
         <hr/>
-        <p>Loaded ID: {{ id }}</p>
         <button @click="navigateToHome" class="btn btn-primary">Go to home</button>
+        <hr/>
+        <router-view/>
     </div>
 </template>
 
 <script>
     export default {
-        props: {
-            id: {
-                type: String,
-            },
-        },
 
         methods: {
             navigateToHome() {
