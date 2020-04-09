@@ -27,6 +27,12 @@
                     hash: '#data'
                 }
             }
+        },
+        
+        beforeRouteEnter(to, from, next) {
+            // no access to component data in here as it's not loaded yet
+            console.log('user detai route check!')
+            next()
         }
     }
 </script>
